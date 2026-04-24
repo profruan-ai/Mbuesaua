@@ -32,7 +32,7 @@ export default function App() {
   };
 
   // URL da API - usa variável de ambiente em produção, ou proxy em desenvolvimento
-const API_URL = import.meta.env.VITE_API_URL || '';
+const API_URL = 'https://mbuesaua-back.onrender.com';
 
   const adaptQuestionsWithAI = async (questions: string[]) => {
     const response = await fetch(`${API_URL}/api/contextualize`, {
